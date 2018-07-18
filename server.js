@@ -31,6 +31,12 @@ app.get('/about',(req,res) =>{
     message: 'Welcome to this Page'
   });
 });
+app.get('/projectlink',(req,res) =>{
+  res.render('projectlink.hbs',{
+    pageTitle: 'Project Page',
+    message: 'Welcome to this Page'
+  });
+});
 
 app.get('/bad',(req,res) =>{
   res.send({
